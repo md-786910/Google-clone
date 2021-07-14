@@ -4,7 +4,7 @@ import MicIcon from '@material-ui/icons/Mic';
 import { useLocation } from 'react-router-dom'
 import Qs from 'qs'
 import Header from './Header';
-import "./app.css";
+// import "./app.css";
 import googleBar from "./image/google.png"
 function GoogleBar() {
 
