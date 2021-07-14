@@ -1,38 +1,234 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+nav {
+  width: 100%;
+  text-align: right;
+}
+.image {
+  margin: 20px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+/* btn firts page */
+.btn {
+  width: 15%;
+  box-shadow: 1px 1px 1px 1px rgb(211, 209, 209);
+  color: rgb(27, 27, 27);
+}
+.googlebarFirst {
+  margin-top: -10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.googleIconBar {
+  width: 23%;
+}
+.formFirst {
+  text-align: center;
+  margin-top: -30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchText {
+  border: 1.4px solid rgb(207, 205, 205);
+  box-shadow: 0.3px 0.3px 0.3px 0.3px rgb(211, 209, 209);
+  width: 45%;
+  height: 2.2em;
+  outline: none;
+  font-size: 20px;
+  border-radius: 50px;
+  text-indent: 40px;
+}
+.searchText:hover {
+  box-shadow: 1px 1px 1px 1px rgb(211, 209, 209);
+}
+.SearchIcon {
+  color: rgb(194, 189, 189);
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 13px;
+}
+.MicIcon {
+  color: rgb(41, 18, 243);
+  position: absolute;
+  z-index: 2;
+  margin-top: 13px;
+  margin-left: -38px;
+}
+.googleSearch {
+  font-weight: 100;
+  background-color: white;
+  border: 1px solid white;
+  width: 10%;
+  height: 30px;
+  background-color: rgb(241, 240, 240);
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.googleSearch:hover {
+  box-shadow: 1px 1px 1px 1px rgb(211, 209, 209);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* apply 2nd page of google */
+.flex_div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: -50px;
+}
+.googlebarSecond {
+  width: 10%;
+}
+.googleIconBarSecond {
+  width: 85%;
+  margin-top: -10px;
+}
+.formSecond {
+  width: 90%;
+}
+.searchTextSecond {
+  border: 1.4px solid rgb(207, 205, 205);
+  box-shadow: 0.3px 0.3px 0.3px 0.3px rgb(211, 209, 209);
+  height: 2.2em;
+  outline: none;
+  font-size: 20px;
+  border-radius: 50px;
+  text-indent: 40px;
+  width: 56%;
 }
 
-.App-link {
-  color: #61dafb;
+.searchTextSecond:hover {
+  box-shadow: 1px 1px 1px 1px rgb(211, 209, 209);
+}
+span {
+  position: absolute;
+  transform: translateX(-80px);
+}
+.clearIcon {
+  position: absolute;
+  left: -30px;
+  top: 13px;
+}
+.MicIconSecond {
+  position: absolute;
+  top: 13px;
+  left: -6px;
+  color: rgb(41, 41, 216);
+}
+.SearchcIconrigth {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  color: rgb(69, 69, 209);
+}
+/* for tab */
+.tab {
+  display: flex;
+  margin-top: 5px;
+}
+ul {
+  width: 55%;
+  display: flex;
+  justify-content: flex-start;
+  transform: translateX(18%);
+  list-style-type: none;
+  cursor: pointer;
+}
+li {
+  color: rgb(68, 69, 70);
+  margin-left: 40px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.liMore {
+  position: relative;
+  left: 1.5em;
+  top: -1.5em;
+}
+.more {
+  margin-top: -10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toolsBtn {
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  width: 15%;
+  height: 23px;
+  background-color: rgb(255, 255, 255);
+}
+.toolsBtn:hover {
+  background-color: rgb(224, 224, 224);
+}
+.sameForAllIcon {
+  width: 10px;
+  position: absolute;
+  margin-left: -18px;
+  color: rgb(162, 162, 170);
+}
+hr {
+  position: absolute;
+  width: 100%;
+  top: 125px;
+}
+/* data */
+.setdata {
+  transform: translateX(12%);
+}
+.TimeResult {
+  margin-top: -20px;
+  color: rgb(109, 107, 107);
+}
+.content {
+  margin-top: 30px;
+}
+.content a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(15, 14, 15);
+  font-weight: 300;
+}
+.title {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  width: 50%;
+  color: rgb(62, 18, 221);
+}
+.title a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+
+  color: rgb(62, 18, 221);
+}
+.bodyContent {
+  margin-top: 9px;
+  line-height: 16px;
+  width: 50%;
+  color: rgb(48, 49, 49);
+  font-weight: 200;
+}
+.active_class {
+  /* background-color: red; */
+  text-decoration: underline;
+  color: rgb(10, 10, 243) !important;
+}
+
+/* for image */
+.AddImage {
+}
+.width_image {
+  width: 80%;
+}
+.width_image img {
+  float: right;
+  border: 2px solid black;
+  margin: 0.6em;
+  width: 20%;
+  height: 20%;
 }

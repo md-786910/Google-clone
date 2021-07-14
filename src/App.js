@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react'
+import GoogleBar from './GoogleBar';
+import Google from './Google';
+import Image from './Image';
+import { Route, Switch } from 'react-router-dom';
 function App() {
+  const [val, setVal] = useState();
+  const adContactHandler = (props) => {
+    setVal(props)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Switch>
+        <Route path="/" exact render={() => <GoogleBar />}></Route>
+        <Route path="/google" exact render={() => <Google adContactHandler={adContactHandler} />}></Route>
+        <Route path="/image" exact render={() => <Image imageVal={val} />}></Route>
+      </Switch>
+    </div >
   );
 }
 
