@@ -1,6 +1,5 @@
 import React from 'react'
 import loginfo from './image/admin.png'
-import "./app.css"
 import GoogleBar from './GoogleBar';
 function Header() {
 
