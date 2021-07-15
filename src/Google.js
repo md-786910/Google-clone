@@ -7,7 +7,6 @@ import GoogleVal from "./GoogleVal"
 import Header from './Header'
 import { Link } from 'react-router-dom'
 import Tab from './Tab'
-import "./app.css";
 import googleBar from "./image/google.png"
 
 function Google(props) {
