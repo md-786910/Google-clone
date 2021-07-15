@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import GoogleBar from './GoogleBar';
 import Google from './Google';
 import Image from './Image';
-import "./app.css";
+import "./App.css";
 import { Route, Switch } from 'react-router-dom';
 function App() {
   const [val, setVal] = useState();
